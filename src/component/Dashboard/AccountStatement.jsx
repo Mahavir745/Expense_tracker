@@ -37,7 +37,7 @@ const AccountStatement = ({addAmount,userFound}) => {
 
   return (
     <div>
-      <div className='flex border flex-wrap justify-evenly m-auto w-[400px] h-[200px] sm:w-[500px] items-center mt-4'>
+      <div className='flex border flex-wrap gap-6 justify-evenly m-auto w-[400px] h-[200px] sm:w-[500px] md:w-[720px] items-center mt-4'>
         <pre className='text-2xl '>Avl. Amount:  <span className='text-green-600 text-3xl'>₹ {amount}</span></pre>
         <pre className='text-[14px] flex justify-between h-[32px] items-center  w-auto'>Last Expenses:  <span className='text-red-600 text-xl'> ₹ {lastExpenses}</span></pre>
       </div>
