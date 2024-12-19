@@ -41,7 +41,7 @@ const AccountStatement = ({addAmount,userFound}) => {
         <pre className='text-2xl '>Avl. Amount:  <span className='text-green-600 text-3xl'>₹ {amount}</span></pre>
         <pre className='text-[14px] flex justify-between h-[32px] items-center  w-auto'>Last Expenses:  <span className='text-red-600 text-xl'> ₹ {lastExpenses}</span></pre>
       </div>
-      <form className=' flex flex-wrap justify-evenly gap-4 w-[400px] sm:w-[500px] md:w-[700px] border-red-700 m-auto mt-4 mb-4' onSubmit={(e)=> HandleExpenseDataField(e)}>
+      <form className=' flex flex-wrap justify-between gap-4 w-[400px] sm:w-[500px] md:w-[700px] border-red-700 m-auto mt-4 mb-4' onSubmit={(e)=> HandleExpenseDataField(e)}>
         <input type="text" className=' p-2 border flex-grow' ref={expenseElement} placeholder='Expense:' />
         <input type="number" className='border p-2 w-40' ref={amountElement} placeholder='Amount:' />
         <button className='bg-red-500 p-2 text-white' type='submit'>Expense</button>
