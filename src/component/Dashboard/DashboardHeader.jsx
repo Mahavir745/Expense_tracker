@@ -8,10 +8,10 @@ const DashboardHeader = ({userFound}) => {
     navigate('/')
   }
   return (
-    <div className='flex flex-wrap justify-evenly bg-yellow-400 text-white'>
-    <p className='text-red-800 font-semibold'>Costumer Id: <span className='text-gray-200 text-2xl textShadowEffect'>{userFound.username}</span></p>
-    <p className='text-red-800 font-semibold'>Contact No: <span className='text-gray-200 text-2xl textShadowEffect'>{userFound.contact}</span></p>
-    <button onClick={HandleLogOut} className='text-blue-950 font-semibold focus:text-red-500'>Log Out</button>
+    <div className='flex flex-wrap h-[100px] justify-evenly items-center bg-violet-100 text-white'>
+    <p className='text-sky-800 font-semibold'>Costumer Id: <span className='text-pink-700 text-2xl textShadowEffect'>{userFound.username}</span></p>
+    <p className='text-sky-800 font-semibold'>Contact No: <span className='text-pink-700 text-2xl textShadowEffect'>{userFound.contact}</span></p>
+    <button onClick={HandleLogOut} className='text-pink-700 font-semibold focus:text-sky-500'>Log Out</button>
   </div>
   )
 }

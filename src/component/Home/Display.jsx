@@ -6,10 +6,10 @@ const Display = () => {
 
   let info ;
   if(slidewindow){
-    info = 'Welcome! Please log in to continue your journey with us'
+    info = 'Your security is our priority - Register Here '
   }
   else{
-    info = "Your security is our priority - Register Here"
+    info = "Welcome! Please log in to continue your journey with us"
   }
 
   return (
