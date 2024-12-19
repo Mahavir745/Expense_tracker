@@ -33,7 +33,7 @@ const Login = () => {
 
   return (
     <div className='h-[auto] mb-5 '>
-      <form className={`border mt-4 w-[400px] h-[400px] sm:w-[400px] sm:h-[400px] md:w-[480px] md:h-[480px] lg:w-[580px] lg:h-[580px] m-auto rounded-2xl overflow-hidden ${!darkmode ? "bg-sky-950 text-white" : "text-gray-800"}`} onSubmit={(e) => HandleLogin(e)}>
+      <form className={`border mt-4 w-full sm:w-[480px] md:w-[580px]  lg:w-[580px] lg:h-[580px] m-auto rounded-2xl overflow-hidden ${!darkmode ? "bg-sky-950 text-white" : "text-gray-800"}`} onSubmit={(e) => HandleLogin(e)}>
         <h2 className={`text-white text-[32px] text-center ${!darkmode ? "bg-blue-800" : "bg-orange-500"}`}>Login</h2>
         <div className='w-[300px] md:w-[500px] border-sky-100 mt-3 rounded p-2 flex flex-col border m-auto'>
           <label htmlFor="userId" className='block'>Email: </label>
@@ -48,7 +48,7 @@ const Login = () => {
         </div>
         <div className='w-[300px] md:w-[500px] border-sky-100 mt-3 rounded p-2 flex flex-col m-auto'>
           <button type='submit' className={`border p-2 w-[100%] ${!darkmode ? "bg-blue-800" : "bg-orange-500"} flex  justify-center text-white rounded-lg`}>Login <LogIn /></button>
-          <p className=''> If you don't have accout:  <Link className='text-blue-600 hover:text-red-500' onClick={HandleSlideWindow}>Register Here</Link></p>
+          <p className=''> If you don't have account:  <Link className='text-blue-600 hover:text-red-500' onClick={HandleSlideWindow}>Register Here</Link></p>
 
           <ul className=' h-[200px]  flex flex-col justify-center'>
             <li className='text-[18px] text-blue-700 font-semibold mb-4'>Secure Access, Peace of Mind:</li>

@@ -58,7 +58,7 @@ const Signup = () => {
 
   return (
     <div className='h-[auto] mb-5'>
-      <form className={` mt-4 w-[400px] h-[400px] sm:w-[400px] sm:h-[400px] md:w-[480px] md:h-[480px] lg:w-[580px] lg:h-[580px] border  m-auto  rounded-2xl overflow-hidden ${!darkmode && " text-blue-800 bg-gray-800"}`} onSubmit={(e) => HandleSignUpData(e)}>
+      <form className={` mt-4 w-full sm:w-[480px] md:w-[580px] lg:w-[580px] lg:h-[580px] border  m-auto  rounded-2xl overflow-hidden ${!darkmode && " text-blue-800 bg-gray-800"}`} onSubmit={(e) => HandleSignUpData(e)}>
         <h2 className={` text-white text-[32px] text-center ${!darkmode ? "bg-blue-500" : "bg-orange-500"}`}>Register</h2>
         <div className={`${!darkmode ? "bg-sky-100" : "bg-yellow-100"} w-[300px] md:w-[400px] lg:w-[500px]  mt-3 rounded p-2 flex flex-col border m-auto `}>
           <label htmlFor="emailId" className='block'>Email: <span className='text-red-800'>*</span> </label>
@@ -81,7 +81,7 @@ const Signup = () => {
         </div>
         <div className={` ${!darkmode ? "bg-sky-100" : "bg-yellow-100"} w-[300px] md:w-[400px] lg:w-[500px] mt-3 rounded p-2 flex flex-col m-auto`}>
           <button className={`border p-2 w-[100%] text-white rounded-lg ${!darkmode ? "bg-blue-500" : "bg-orange-500"}`} type='submit'>Register</button>
-          <p className=''> Already have an accout:  <Link className='text-green-600 hover:text-blue-500' onClick={HandleSlideWindow}>Login Here</Link></p>
+          <p className=''> Already have an account:  <Link className='text-green-600 hover:text-blue-500' onClick={HandleSlideWindow}>Login Here</Link></p>
         </div>
       </form>
     </div>
