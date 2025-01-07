@@ -22,6 +22,7 @@ const AccountStatement = ({addAmount,userFound}) => {
     if(expense && amount !== ""){
       let statement = {expense,amount}
       HandleExpenseData(statement)
+      
     }
     else{
       alert("Both field has been required")
